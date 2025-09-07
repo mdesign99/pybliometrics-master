@@ -31,11 +31,13 @@ DEFAULT_PATHS = {
     'SerialTitle': BASE_PATH_SCOPUS / 'serial_title',
     'PlumXMetrics': BASE_PATH_SCOPUS / 'plumx',
     'SubjectClassifications': BASE_PATH_SCOPUS / 'subject_classification',
-    'ArticleEntitlement': BASE_PATH_SCIENCEDIRECT / 'article_entitlement',
-    'ArticleMetadata': BASE_PATH_SCIENCEDIRECT / 'article_metadata / ',
-    'ArticleRetrieval': BASE_PATH_SCIENCEDIRECT / 'article_retrieval',
-    'ScienceDirectSearch': BASE_PATH_SCIENCEDIRECT / 'science_direct_search',
-    'ScDirSubjectClassifications': BASE_PATH_SCIENCEDIRECT / 'subject_classification',
+    # MODIFIED FOR THESIS
+    # Required because of bugs in pybliometrics init; creating the following folders leads to errors
+    # 'ArticleEntitlement': BASE_PATH_SCIENCEDIRECT / 'article_entitlement',
+    # 'ArticleMetadata': BASE_PATH_SCIENCEDIRECT / 'article_metadata / ',
+    # 'ArticleRetrieval': BASE_PATH_SCIENCEDIRECT / 'article_retrieval',
+    # 'ScienceDirectSearch': BASE_PATH_SCIENCEDIRECT / 'science_direct_search',
+    # 'ScDirSubjectClassifications': BASE_PATH_SCIENCEDIRECT / 'subject_classification',
 }
 
 # URLs for all classes
